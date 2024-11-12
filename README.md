@@ -15,7 +15,7 @@
 
 ## 模型架构
 <p align="center">
-    <img src="image/20240720174518.png" width="400"/>
+    <img src="image/20240720174518.png" width="700"/>
 <p>
 
 
