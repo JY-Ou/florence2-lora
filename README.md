@@ -43,7 +43,7 @@
 ## 使用LoRA微调
 
 <p align="center">
-    <img src="image/20241104152138.png" width="400"/>
+    <img src="image/20241104152138.png" width="700"/>
 <p>
 
 Florence2应用Lora可以使用在`q_proj`, `out_proj`, `k_proj`, `v_proj`, `linear`, `Conv2d`, `lm_head`, `fc2`, `fc1`
@@ -103,13 +103,13 @@ fabric with wrinkle-weft. The fabric is laid out on a green cutting mat. There a
 
 | 目标检测测试结果                                                      |                                                               |
 |---------------------------------------------------------------|---------------------------------------------------------------|
-| <p align="center"><img src="image/test7.png" width="200"/><p> | <p align="center"><img src="image/test8.png" width="200"/><p> |
+| <p align="center"><img src="image/test7.png" width="300"/><p> | <p align="center"><img src="image/test8.png" width="300"/><p> |
 
 
 
 gradio界面
 <p align="center">
-    <img src="image/test6.png" width="400"/>
+    <img src="image/test6.png" width="600"/>
 <p>
 
 ### 参考
