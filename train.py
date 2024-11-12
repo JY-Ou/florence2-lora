@@ -225,7 +225,7 @@ def main(args):
     plot_loss_from_file(f'{save_path}/loss_history.txt', save_path, plt_config)
 
 
-# 按装订区域中的绿色按钮以运行脚本。
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Florence_lora_train", add_help=False)
     # path
