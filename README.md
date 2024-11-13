@@ -48,7 +48,7 @@
 <p>
 
 Florence2应用Lora可以使用在`q_proj`, `out_proj`, `k_proj`, `v_proj`, `linear`, `Conv2d`, `lm_head`, `fc2`, `fc1`
-这些层中，一般选择应用在`q_proj`, `k_proj`, `v_proj`。但具体应用哪些层需要逐步去实验，以达到最佳效果。这里训练我选择`q_proj`, `k_proj`, 
+这些层中，一般选择应用在`q_proj`, `k_proj`, `v_proj`。但具体应用哪些层需要逐步去实验，以达到最佳效果。这里训练选择`q_proj`, `k_proj`, 
 `v_proj`，`lm_head`, `fc2`, `fc1`层
 
 训练时实验发现：
@@ -58,7 +58,7 @@ Florence2应用Lora可以使用在`q_proj`, `out_proj`, `k_proj`, `v_proj`, `lin
 
 - 训练时可以选择只训练文本编码器，冻结视觉编码器，但多次实验发现将文本编码器和视觉编码器一起训练效果会比冻结的好
 
-- 训练数据的构成顺序也有关系，由于我的训练数据里包含`OD`、`DENSE_REGION_CAPTION`、`CAPTION_TO_PHRASE_GROUNDING`，这三种数据的混合顺序对损失也有影响，相同设置下，训练顺序为`OD`、`DENSE_REGION_CAPTION`、`CAPTION_TO_PHRASE_GROUNDING`会有较到损失
+- 训练数据的构成顺序也有关系，由于训练数据里包含`OD`、`DENSE_REGION_CAPTION`、`CAPTION_TO_PHRASE_GROUNDING`，这三种数据的混合顺序对损失也有影响，相同设置下，训练顺序为`OD`、`DENSE_REGION_CAPTION`、`CAPTION_TO_PHRASE_GROUNDING`会有较到损失
 
 - 训练收敛速度快，3-4回合就收敛
 
